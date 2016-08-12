@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var fs = require("fs");
 var router = require('./routes/router');
 const artTpl = require("art-template");
+const session = require("express-session");
 
 var app = express();
 
@@ -21,14 +22,23 @@ app.engine('.html', artTpl.__express);
 //app.use(logger('combined', {stream: logFiles}));
 
 //在控制台输出请求日志 ** 放在静态资源加载后面则不打印静态资源的请求
-app.use(logger('dev'));
+//app.use(logger('dev'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'static')));
 
-
+/*set session*/
+app.use(session({
+  name: "sid",
+  secret: "manageSystemSessionSecret",
+  resave: true,
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 1000 * 60 * 60 //过时时间设置（毫秒）
+  }
+}));
 
 app.use('/', router);
 

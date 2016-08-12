@@ -1,0 +1,618 @@
+[
+    {
+        "name": "Common 公共",
+        "child": [{
+            "name": "BlueCube 平台组件库",
+            "url": "http://demo.jr.jd.com/lab/blueCube/index/1.0.0/html/index/",
+            "describe": "金融平台全站基础组件库"
+        }, {
+            "name": "理财流程公共模块",
+            "url": "http://demo.jr.jd.com/financial/common/2.0.0/html/common.html",
+            "describe": "理财流程公共模块"
+        }]
+    },
+    {
+        "name": "Date 数据可视化",
+        "child": [{
+            "name": "SVG 百分比圆",
+            "url": "./example/arc/arc.html",
+            "describe": "可选"
+        }]
+    },
+    {
+        "name": "css裁剪",
+        "child": [{
+            "name": "css clip 小动物",
+            "url": "http://species-in-pieces.com/#",
+            "describe": "可选"
+        }]
+    },
+    {
+        "name": "Animate 动画",
+        "child": [{
+            "name": "animation 基础动画合集",
+            "url": "http://www.jiawin.com/demos/530/index.html",
+            "describe": "基础动画合集"
+        }, {
+            "name": "Cheat Sheet 关键帧源码-1",
+            "url": "http://www.justinaguilar.com/animations/index.html",
+            "describe": "半成品动画、有心跳等demo 可以直接用来展示想法"
+        }, {
+            "name": "animate.css 关键帧源码-2",
+            "url": "http://daneden.github.io/animate.css/",
+            "describe": "很适合 商品图片信息展示 很赞"
+        }, {
+            "name": "minimamente 关键帧源码-3",
+            "url": "http://www.minimamente.com/example/magic_animations/",
+            "describe": "动画合集"
+        }, {
+            "name": "抖动 shake 关键帧源码-4",
+            "url": "http://elrumordelaluz.github.io/csshake/",
+            "describe": "抖动"
+        }, {
+            "name": "Icon Hover Effects",
+            "url": "http://www.jiawin.com/demos/icon-hover-effects/index.html",
+            "describe": "图标hover 动画"
+        }, {
+            "name": "按钮动画 布局综合",
+            "url": "http://paperplane.joomlastars.co/",
+            "describe": "综合应用"
+        }, {
+            "name": "webdingo.net 视差细节综合应用",
+            "url": "http://webdingo.net/ueneo/demo1/",
+            "describe": "综合应用"
+        }, {
+            "name": "Hover时的闪动",
+            "url": "http://www.addyosmani.com/resources/shinetime/",
+            "describe": "图标hover base:CSS3"
+        }, {
+            "name": "Hover时图片切换",
+            "url": "http://tympanus.net/TipsTricks/CSS3MenuHoverEffect/"
+        }, {
+            "name": "很炫的产品介绍画面",
+            "url": "http://demo.tutorialzine.com/2012/02/css3-product-showcase/"
+        }, {
+            "name": "背景淡入淡出",
+            "url": "http://tympanus.net/Development/FullscreenImageBlurEffect/index.html"
+        }, {
+            "name": "全屏切换效果",
+            "url": "http://tympanus.net/Development/FullscreenImage3DEffect/"
+        }, {
+            "name": "整页切入效果",
+            "url": "http://tympanus.net/Tutorials/CSS3PageTransitions/index.html"
+        }, {
+            "name": "滚动的可乐瓶",
+            "url": "http://www.romancortes.com/ficheros/css-coke.html"
+        }, {
+            "name": "唱片弹出效果",
+            "url": "http://johnpatrickgiven.com/jquery/Image-Scale-Carousel/",
+            "describe": "可用于music.jd.com"
+        }, {
+            "name": "唱片转动效果",
+            "url": "http://demo.marcofolio.net/jquery_dj/"
+        }, {
+            "name": "黑客帝国掉落的代码",
+            "url": "http://girliemac.com/sandbox/matrix.html",
+            "describe": "活动页素材"
+        }, {
+            "name": "优雅的索取Email~",
+            "url": "http://tympanus.net/Tutorials/AnimatedWebBanners/",
+            "describe": "banner素材"
+        }, {
+            "name": "CSS3 3D旋转效果",
+            "url": "http://www.webkit.org/blog-files/3d-transforms/poster-circle.html"
+        }, {
+            "name": "3D元素周期表",
+            "url": "http://www.famo.us/"
+        }, {
+            "name": "Pseudo-Elements",
+            "url": "http://tympanus.net/Development/PseudoElementsAnimationsTransitions/index.html",
+            "describe": "水滴 圆形渐变 眼球等"
+        }, {
+            "name": "视差星空",
+            "url": "http://css-tricks.com/examples/StarryNightCSS3/",
+            "describe": "background-postion方式实现 http://css-tricks.com/parallax-background-css3/"
+        }, {
+            "name": "hover 各种小星星",
+            "url": "http://www.html5tricks.com/demo/html5-canvas-magic-effect/index.html",
+            "describe": ""
+        }, {
+            "name": "订阅发信动画",
+            "url": "http://www.queness.com/resources/html/css3-coming-soon/index.html",
+            "describe": ""
+        }, {
+            "name": "redAlert",
+            "url": "example/redAlert.html",
+            "describe": ""
+        }, {
+            "name": "京东食品productHover",
+            "url": "example/productHover.html",
+            "describe": ""
+        }]
+    },
+    {
+        "name": "Button 按钮",
+        "child": [{
+            "name": "扁平化创意按钮",
+            "url": "http://www.jiawin.com/demos/creative-button-styles/index.html"
+        }, {
+            "name": "多色按钮",
+            "url": "http://www.jiawin.com/demos/738/index.html"
+        }, {
+            "name": "Checkboxes 动画",
+            "url": "http://tympanus.net/Development/AnimatedCheckboxes/"
+        }, {
+            "name": "伪元素按钮效果",
+            "url": "http://tympanus.net/Development/ButtonStylesInspiration/"
+        }]
+    },
+    {
+        "name": "Slider 焦点图",
+        "child": [{
+            "name": "wowslider",
+            "url": "http://wowslider.com/",
+            "describe": "分层"
+        }, {
+            "name": "SlitSlider 全屏切割",
+            "url": "http://tympanus.net/Tutorials/FullscreenSlitSlider/index2.html",
+            "describe": "全屏 切割 角度"
+        }, {
+            "name": "Item Transition 单品元素",
+            "url": "http://tympanus.net/Development/ItemTransitions/index.html",
+            "describe": "单品元素却换"
+        }, {
+            "name": "全页切换动画",
+            "url": "http://tympanus.net/Development/PageTransitions/",
+            "describe": "单品元素却换"
+        }, {
+            "name": "Multi-Item Slider 商品异步移出",
+            "url": "http://tympanus.net/Tutorials/ItemSlider/",
+            "describe": "异步"
+        }, {
+            "name": "3D Slider",
+            "url": "http://codecanyon.net/item/ccslider-jquery-3d-slideshow-plugin/full_screen_preview/162445",
+            "describe": "有一定性能成本"
+        }, {
+            "name": "多图平滑展出动画",
+            "url": "http://demo.tutorialzine.com/2013/05/diagonal-fade-gallery/"
+        }, {
+            "name": "分层焦点图切换",
+            "url": "http://tympanus.net/Development/ParallaxContentSlider/"
+        }, {
+            "name": "分割3D切换",
+            "url": "http://tympanus.net/Development/Slicebox/index2.html"
+        }, {
+            "name": "SlitSlider 全屏切割",
+            "url": "http://tympanus.net/Tutorials/FullscreenSlitSlider/index2.html",
+            "describe": "全屏 切割 角度"
+        }, {
+            "name": "竖条切入Demo",
+            "url": "http://workshop.rs/projects/jqfancytransitions/"
+        }, {
+            "name": "带效果的页面切换",
+            "url": "http://crane-brothers.com/",
+            "describe": "使用HTML5技术实现页面切换时候体验的最优化，github用的也是这样的技术，不过，github改版后已经取消了动画效果"
+        }, {
+            "name": "图片缩放切换效果",
+            "url": "http://imageflow.finnrudolph.de/"
+        }, {
+            "name": "图片切换折纸效果",
+            "url": "http://tympanus.net/Development/Unfolding3DThumbnailsConcept/",
+            "describe": "别点击左右"
+        }, {
+            "name": "分步骤折纸翻页效果",
+            "url": "http://tympanus.net/Development/ImageTransitions/index5.html"
+        }, {
+            "name": "3D左右切换",
+            "url": "http://tympanus.net/Development/3DGallery/index2.html"
+        }, {
+            "name": "简介内容隐藏交互",
+            "url": "http://tympanus.net/jCapSlide/"
+        }, {
+            "name": "图片拼合效果",
+            "url": "http://tympanus.net/Development/MergingImageBoxes/"
+        }, {
+            "name": "带预览的焦点图切换按钮",
+            "url": "http://tympanus.net/Tutorials/ThumbnailsPreviewSlider/"
+        }, {
+            "name": "上下切分，点击展示单张",
+            "url": "http://tympanus.net/Development/VerticalSlidingAccordion/example1.html"
+        }, {
+            "name": "Hover时自动切换",
+            "url": "http://tympanus.net/TipsTricks/FastHoverSlideshow/index2.html"
+        }, {
+            "name": "一堆照片的切换",
+            "url": "http://tympanus.net/Tutorials/PhotoStack/"
+        }, {
+            "name": "散落的照片",
+            "url": "http://tympanus.net/Development/PhotoDesk/"
+        }, {
+            "name": "波浪形焦点图切换效果",
+            "url": "http://tympanus.net/Development/WaveDisplayEffect/index2.html"
+        }, {
+            "name": "图中图效果",
+            "url": "http://tympanus.net/Development/ImageZoomTour/"
+        }, {
+            "name": "Mini Slider1",
+            "url": "http://tympanus.net/Tutorials/MicroGallery/"
+        }, {
+            "name": "Mini Slider2",
+            "url": "http://tympanus.net/Tutorials/MinimalisticSlideshowGallery/"
+        }, {
+            "name": "coin slider",
+            "url": "http://workshop.rs/projects/coin-slider/",
+            "describe": "完整的Slider组件"
+        }, {
+            "name": "Nivo slider",
+            "url": "http://dev7studios.com/nivo-slider/",
+            "describe": "完整的Slider组件"
+        }, {
+            "name": "Dribbble member card",
+            "url": "http://cssdeck.com/labs/full/dribbble-member-card-concept",
+            "describe": "用户card组件 实现 包含展开等 作品slider"
+        }, {
+            "name": "REFINESLIDE 响应式",
+            "url": "http://alexdunphy.github.io/refineslide/",
+            "describe": "支持响应式部门的 3D旋转"
+        }, {
+            "name": "手风琴 焦点图",
+            "url": "http://thecodeplayer.com/walkthrough/make-an-accordian-style-slider-in-css3",
+            "describe": ""
+        }, {
+            "name": "竖条分割 动画基于GSAP",
+            "url": "http://www.jq22.com/demo/jQuery-hdp20160310/",
+            "describe": ""
+        }, {
+            "name": "3d倾斜瀑布流",
+            "url": "http://tympanus.net/Development/IsometricGrids/index.html",
+            "describe": ""
+        }, {
+            "name": "3d多层焦点图",
+            "url": "http://tympanus.net/Development/ThumbnailGridAnimations/index5.html#",
+            "describe": ""
+        }]
+    },
+    {
+        "name": "Image&Text 图文混排",
+        "child": [{
+            "name": "正方形图文hover",
+            "url": "http://tympanus.net/Development/HoverEffectIdeas/index.html",
+            "describe": ""
+        },{
+            "name": "图文混合区域 动画",
+            "url": "http://tympanus.net/Tutorials/CaptionHoverEffects/index4.html",
+            "describe": "很适合 商品图片信息展示 很赞"
+        }, {
+            "name": "hover 图文切换动画合集",
+            "url": "http://gudh.github.io/ihover/dist/index.html",
+            "describe": "动画合集"
+        }]
+    },
+    {
+        "name": "Text 文字",
+        "child": [{
+            "name": "textillate.js",
+            "url": "http://jschr.github.io/textillate/",
+            "describe": "文字动画js库，基于jquery等"
+        },{
+            "name": "CreativeLinkEffects",
+            "url": "http://tympanus.net/Development/CreativeLinkEffects/",
+            "describe": "创意链接文本 hover效果"
+        },{
+            "name": "shine 跟随阴影",
+            "url": "http://bigspaceship.github.io/shine.js/",
+            "describe": "跟随阴影"
+        },{
+            "name": "文字跳动",
+            "url": "http://codepen.io/rlo206/pen/vKOjjd",
+            "describe": "基于伪元素的文字跳动效果"
+        }]
+    },
+    {
+        "name": "Responsive 响应式",
+        "child": [{
+            "name": "responsive-jp",
+            "url": "http://responsive-jp.com/",
+            "describe": "响应式网站聚合"
+        }, {
+            "name": "mediaqueri",
+            "url": "http://mediaqueri.es/",
+            "describe": "响应式网站聚合"
+        }]
+    },
+    {
+        "name": "Menu 菜单",
+        "child": [{
+            "name": "弧形菜单",
+            "url": "http://tympanus.net/Tutorials/CircularNavigation/index2.html",
+            "describe": "纯CSS3打造 注意 Intractive demo 中分步教程"
+        },{
+            "name": "全屏推入菜单",
+            "url": "http://tympanus.net/Development/MultiLevelPushMenu/index3.html",
+            "describe": "类似手机app上常用效果 全屏推入"
+        },{
+            "name": "顶部导航 fixed",
+            "url": "http://tympanus.net/Development/HeaderEffects/",
+            "describe": "根据 网页滚动位置 自适应的顶栏"
+        },{
+            "name": "边框推入菜单",
+            "url": "http://tympanus.net/Tutorials/AnimatedBorderMenus/index.html",
+            "describe": "比较新颖的方式"
+        },{
+            "name": "边框过渡动画",
+            "url": "http://dreamsky.github.io/main/blog/sidebar-transitions/",
+            "describe": ""
+        }]
+    },
+    {
+        "name": "Progress Bar 进度条",
+        "child": [{
+            "name": "彩条进度条",
+            "url": "http://css-tricks.com/examples/ProgressBars/"
+        }, {
+            "name": "Blue Loading",
+            "url": "http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-Loading-Animation/index.html"
+        }, {
+            "name": "Blue Loading Loop",
+            "url": "http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-loading-animation-loop/index.html"
+        }, {
+            "name": "Facebook Loading",
+            "url": "http://demo.marcofolio.net/facebook_loader/"
+        }, {
+            "name": "精度进度条",
+            "url": "http://www.htmldrive.net/items/demo_show/791"
+        }, {
+            "name": "Stylish progress bars",
+            "url": "http://www.htmldrive.net/items/demo_show/1195"
+        }, {
+            "name": "粒子火花加载进度条",
+            "url": "http://demo.jr.jd.com/lab/example/process/process.html"
+        }]
+    },
+    {
+        "name": "Notification 通知提示",
+        "child": [{
+            "name": "红色计数通知",
+            "url": "http://www.red-team-design.com/wp-content/uploads/2012/06/notification-bubble-css3-keyframe-animation-demo.html",
+            "describe": "类似IOS 气泡通知"
+        }, {
+            "name": "半透明气泡通知",
+            "url": "http://www.erichynds.com/examples/jquery-notify/index.htm",
+            "describe": "类似Ubuntu的桌面通知"
+        }]
+    },
+    {
+        "name": "Modal 模态框",
+        "child": [{
+            "name": "Nifty Modal",
+            "url": "http://tympanus.net/Development/ModalWindowEffects/",
+            "describe": "高端大气"
+        } ,{
+            "name": "Flippant.js",
+            "url": "http://labs.mintchaos.com/flippant.js/",
+            "describe": "不带灯箱的 翻动动画"
+        },{
+            "name": "svg弹窗",
+            "url": "http://tympanus.net/Development/DialogEffects/laura.html",
+            "describe": "SVG弹窗效果不错"
+        }]
+    },
+    {
+        "name": "Video 视频",
+        "child": [{
+            "name": "numbrs",
+            "url": "https://www.numbrs.com/uk",
+            "describe": "一个APP 站，大视频的头部冲击力特别强烈。视频MP4格式5MB左右，在带宽越来富裕的现在已经不是什么问题，相对于FLASH解决方案HTML5更加流畅。"
+        }, {
+            "name": "riskeverything",
+            "url": "http://riskeverything.us/",
+            "describe": "另一个大视频头部的应用"
+        }, {
+            "name": "g-star",
+            "url": "http://theartofraw.g-star.com/",
+            "describe": "另一个大视频头部的应用"
+        }, {
+            "name": "视频背景教程",
+            "url": "http://www.iandevlin.com/blog/2013/03/html5/html5-video-and-background-images",
+            "describe": ""
+        }]
+    },
+    {
+        "name": "Transition 过渡",
+        "child": [{
+            "name": "ElementTransitions",
+            "url": "http://dan-silver.github.io/ElementTransitions.js/",
+            "describe": "大量 单块切换过渡动画"
+        }, {
+            "name": "Direction Aware",
+            "url": "http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/",
+            "describe": "多块 焦点跟随过渡"
+        }, {
+            "name": "灯光投影效果",
+            "url": "http://www.zachstronaut.com/lab/text-shadow-box/text-shadow-box.html"
+        }, {
+            "name": "头像 焦点过渡",
+            "url": "http://www.jiawin.com/demos/creative-css3-avatar-display/index.html",
+            "describe": "多块 焦点 过渡"
+        }, {
+            "name": "翻书过渡",
+            "url": "http://tympanus.net/Development/BookBlock/"
+        }]
+    },
+    {
+        "name": "ParallaxScrolling 视差滚动",
+        "child": [{
+            "name": "sammarkiewi 滚动换衣",
+            "url": "http://sammarkiewi.cz/",
+            "describe": "网站的创意是用鼠标滚动给人物换衣服，通过换衣服来切换身份做个人介绍的想法有意思，把简历做成这样应该会无往不利吧。"
+        }, {
+            "name": "cf 的人物故事视差",
+            "url": "https://www.atlassian.com/information-management-infographic",
+            "describe": ""
+        }, {
+            "name": "QQ国际版 视差 video",
+            "url": "http://www.imqq.com/",
+            "describe": "运用视差 和 video"
+        }, {
+            "name": "Red Bull - La Tabla de Gisela",
+            "url": "http://www.latabladegisela.com/#votar",
+            "describe": "典型用视差滚动效果的网站，没用什么别的，只是滚动效果就做的很满。video也有点意思。"
+        }, {
+            "name": "titanic.q-music.be",
+            "url": "http://titanic.q-music.be/",
+            "describe": "潜水艇为焦点 潜水 "
+        }, {
+            "name": "soleilnoir.net",
+            "url": "http://www.soleilnoir.net/believein/#/start",
+            "describe": "强烈的颜色对比"
+        }, {
+            "name": "sony 产品展示",
+            "url": "http://discover.store.sony.com/be-moved/",
+            "describe": "sony搞的 相当IMBA"
+        }, {
+            "name": "鼠标跟随视差",
+            "url": "http://projects.cameronmcefee.com/plax-demo/",
+            "describe": "根据鼠标跟随 不同元素分景深层次视差"
+        }, {
+            "name": "ok-studios 多层视差 背景fixed",
+            "url": "http://www.ok-studios.de/home/",
+            "describe": ""
+        }, {
+            "name": "loisjeans 多层视差",
+            "url": "http://www.loisjeans.com/web2012/es",
+            "describe": ""
+        }]
+    },
+    {
+        "name": "Tools 工具",
+        "child": [{
+            "name": "jquery.transit",
+            "url": "http://ricostacruz.com/jquery.transit/"
+        }, {
+            "name": "常用曲线",
+            "url": "http://easings.net/zh-cn"
+        }, {
+            "name": "transform调试工具",
+            "url": "http://ecd.tencent.com/css3/tools.html"
+        }, {
+            "name": "投影样式「Long Shadow」",
+            "url": "http://sandbox.juan-i.com/longshadows/"
+        }, {
+            "name": "在线二次曲线生成器",
+            "url": "http://cubic-bezier.com/"
+        }, {
+            "name": "CSS3 箭头生成器",
+            "url": "http://cssarrowplease.com/"
+        }, {
+            "name": "CSS3 变形生成器",
+            "url": "http://www.css3maker.com/css3-transform.html"
+        }, {
+            "name": "CSS3 边框生成器",
+            "url": "http://border-radius.com/"
+        }, {
+            "name": "CSS3 渐变生成器",
+            "url": "http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/"
+        }, {
+            "name": "CSS 3D「光引擎」",
+            "url": "http://photon.attasi.com/index.html"
+        }, {
+            "name": "CSS 属性 浏览器支持搜索",
+            "url": "http://www.browsersupport.net/"
+        }, {
+            "name": "COLORRRS 随机颜色推荐",
+            "url": "http://colorrrs.com/"
+        }, {
+            "name": "screensiz 屏幕尺寸参考手册",
+            "url": "http://screensiz.es/phone"
+        }]
+    },
+    {
+        "name": "Compete 竞品",
+        "child": [{
+            "name": "拍拍 51活动",
+            "url": "http://www.paipai.com/fangjia.shtml",
+            "describe": "背景GIF 浮动云状层"
+        }, {
+            "name": "易讯 发现",
+            "url": "http://faxian.51buy.com/?YTAG=2.17004005",
+            "describe": "slider 单品模块hover"
+        }, {
+            "name": "易讯 易讯故事",
+            "url": "http://gushi.yixun.com/?YTAG=1.100067001",
+            "describe": "综合应用"
+        }, {
+            "name": "乐蜂网",
+            "url": "http://www.lefeng.com/",
+            "describe": "左侧品类品牌蜂巢弹层，右侧大咖等"
+        }, {
+            "name": "猎豹 欢迎页",
+            "url": "http://www.liebao.cn/welcome4.html",
+            "describe": ""
+        }, {
+            "name": "淘宝 >>",
+            "url": "http://www.taobao.com/"
+        }, {
+            "name": "亚马逊 >>",
+            "url": "http://www.z.cn/"
+        }, {
+            "name": "小米 >>",
+            "url": "http://www.xiaomi.com/"
+        }, {
+            "name": "有货 >>",
+            "url": "http://www.yohobuy.com/"
+        }, {
+            "name": "naver >>",
+            "url": "http://www.naver.com/"
+        }, {
+            "name": "ssg >>",
+            "url": "http://www.ssg.com/"
+        }, {
+            "name": "cjmall >>",
+            "url": "http://www.cjmall.com/"
+        }]
+    },
+    {
+        "name": "Site 综合站点",
+        "child": [{
+            "name": "Flat UI 扁平设计模板站点",
+            "url": "http://designmodo.com/flat/",
+            "describe": "卖扁平化模板的网站，网站有一阵了，基本上用了眼下各种流行元素：扁平，滚动，长阴影，鼠标响应的动画图标……"
+        }, {
+            "name": "cssdeck.com",
+            "url": "http://cssdeck.com/",
+            "describe": "大量的CSS3动画demo站点 提供及时的代码预览"
+        }, {
+            "name": "runjs.cn",
+            "url": "http://runjs.cn/square",
+            "describe": "runjs 国内源码分享平台"
+        }, {
+            "name": "tympanus codrops",
+            "url": "http://tympanus.net/codrops/category/tutorials/",
+            "describe": "大量CSS3 动画应用教程 精品"
+        }, {
+            "name": "capptivate.co 交互动画聚合",
+            "url": "http://capptivate.co/",
+            "describe": "用视频记录了大量app交互动画、强烈推荐、下载量较大可能比较慢"
+        }, {
+            "name": "kick my habits",
+            "url": "http://www.leedsbuildingsociety.co.uk/resources/kick-my-habits/",
+            "describe": "对于动画大量应用"
+        }, {
+            "name": "kendo UI",
+            "url": "http://www.kendoui.com/",
+            "describe": "首页的焦点图应用、外加DEMOS 分类下有很多可以参考的 demo 涉及移动端等"
+        }, {
+            "name": "rit-team.ru",
+            "url": "http://rit-team.ru/",
+            "describe": "以赛车路径作为关键轴"
+        }, {
+            "name": "isotope",
+            "url": "http://isotope.metafizzy.co/index.html",
+            "describe": "类似元素周期表"
+        }, {
+            "name": "makeyourmoneymatter 细心的结晶",
+            "url": "http://makeyourmoneymatter.org/",
+            "describe": "很细心的综合应用"
+        }]
+    }
+]

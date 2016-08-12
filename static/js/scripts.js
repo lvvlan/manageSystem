@@ -48,7 +48,15 @@ jQuery(document).ready(function() {
                 },
                 dataType: "json",
                 success: function (data){
-                    console.log(data);
+                    lock = false;
+                    if(data.code == 200){
+                        location.href = "/edit.html"
+                    }else {
+                        alert(data.msg);
+                    }
+                },
+                error: function (){
+                    lock = false;
                 }
             });
         }

@@ -66,12 +66,43 @@ input:focus {
         0 2px 7px 0 rgba(0,0,0,.2);
 }
 
-button {
+.submitBox{
+    width: 302px;
+    height: 46px;
+    position: relative;
+    margin-top: 32px;
+    padding: 0;
+}
+.submitBox input{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    z-index: 9;
+}
+
+a.submit {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     cursor: pointer;
     width: 300px;
     height: 44px;
-    margin-top: 32px;
-    padding: 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 44px;
     background: #ef4300;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -97,19 +128,21 @@ button {
     -ms-transition: all .2s;
 }
 
-button:hover {
+.submitBox:hover a.submit{
     -moz-box-shadow:
-        0 15px 30px 0 rgba(255,255,255,.15) inset,
-        0 2px 7px 0 rgba(0,0,0,.2);
+            0 15px 30px 0 rgba(255,255,255,.15) inset,
+            0 2px 7px 0 rgba(0,0,0,.2);
     -webkit-box-shadow:
-        0 15px 30px 0 rgba(255,255,255,.15) inset,
-        0 2px 7px 0 rgba(0,0,0,.2);
+            0 15px 30px 0 rgba(255,255,255,.15) inset,
+            0 2px 7px 0 rgba(0,0,0,.2);
     box-shadow:
-        0 15px 30px 0 rgba(255,255,255,.15) inset,
-        0 2px 7px 0 rgba(0,0,0,.2);
+            0 15px 30px 0 rgba(255,255,255,.15) inset,
+            0 2px 7px 0 rgba(0,0,0,.2);
 }
 
-button:active {
+
+
+.submitBox:active a.submit {
     -moz-box-shadow:
         0 15px 30px 0 rgba(255,255,255,.15) inset,
         0 2px 7px 0 rgba(0,0,0,.2);
@@ -119,8 +152,7 @@ button:active {
     box-shadow:        
         0 5px 8px 0 rgba(0,0,0,.1) inset,
         0 1px 4px 0 rgba(0,0,0,.1);
-
-    border: 0px solid #ef4300;
+    border: 1px solid #ef4300;
 }
 
 .error {

@@ -3,8 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/css/edit.css">
 </head>
 <body>
-编辑页
+<header>
+    <div class="inner">
+        <span class="userBox">尊敬的 <em class="user">{{username}}</em> , 欢迎您~</span>
+    </div>
+</header>
+<div id="container">
+    <form id="settingForm">
+        <div class="major">
+            <h3 class="title">一级选项</h3>
+            <div class="item">
+                <span class="title"><em>*</em>一级标题:</span>
+                <div class="middle">
+                    <div class="select" node-type="first">
+                        <p class="defTxt">请选择</p>
+                        <ul class="check">
+                            {{each listJson}}
+                            <li>{{$value.name}}</li>
+                            {{/each}}
+                        </ul>
+                        <input type="hidden" name="first" class="hidden">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="title"><em>*</em>二级标题:</span>
+                <div class="middle">
+                    <div class="select" node-type="second">
+                        <p class="defTxt">请选择</p>
+                        <ul class="check"></ul>
+                        <input type="hidden" name="second" class="hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submitBox">
+            <a href="javascript:void (0);">提交</a>
+            <input type="submit">
+        </div>
+
+    </form>
+</div>
+<script src="//static.360buyimg.com/finance/common/lib/jquery/1.8.3/jquery.js"></script>
+<script src="/js/jquery.validate.js"></script>
+<script src="/js/select.js"></script>
+<script src="/js/edit.js"></script>
 </body>
 </html>
