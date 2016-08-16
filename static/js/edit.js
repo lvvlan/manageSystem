@@ -5,7 +5,10 @@
  * Update 2016/8/12
  */
 ;(function (){
-    var $item = $(".item", "#settingForm");
+    var form = $("#settingForm"),
+        currentDef = "",
+        $item = $(".item", form),
+        formLock = false;
 
     for(var i = 0; i <$item.length; i++){
         $item.eq(i).css({
@@ -18,22 +21,24 @@
     $("[node-type=first]").select({
         callback: function (obj){
             var html = [];
-            obj.attr("first", true);
-            $(".defTxt", "[node-type=second]").html("加载中...");
+            obj.parents(".select").attr("first", true);
             obj.parents(".item").find(".error").hide();
+            if(currentDef == $(".defTxt", "[node-type=first]").html()) return;
+            currentDef = $(".defTxt", "[node-type=first]").html();
+            $(".defTxt", "[node-type=second]").html("加载中...");
             //渲染二级选项
             $.ajax({
                 url: "/second",
                 type: "POST",
                 data: {
-                    firstName: obj.find(".defTxt").html()
+                    firstName: obj.parents(".select").find(".defTxt").text()
                 },
                 dataType: "json",
                 success: function (data){
                     for(var i = 0; i <data.length; i++){
                         html.push("<li>"+data[i].name+"</li>");
                     }
-                    html.push("<li>添加新项目</li>");
+                    html.push("<li data-operate='new'>添加新项目</li>");
                     $(".check", "[node-type=second]").html(html.join(""));
                     $(".defTxt", "[node-type=second]").html("请选择");
                 }
@@ -48,6 +53,11 @@
                 instant: true,
                 callback: function (obj){
                     obj.parents(".item").find(".error").hide();
+                    if(obj.attr("data-operate") == "new" && $(".minor", form).height()<=0){
+                        var $item = $(".minor", form).find(".item"),
+                            targetH = $item.length * $item.outerHeight(true);
+                        $(".minor", form).animate({height: targetH});
+                    }
                 }
             });
             $this.off("click.check");
@@ -57,8 +67,6 @@
     });
 
     //提交校验
-    var form = $("#settingForm");
-
     $.validator.setDefaults({
         ignore: "", //默认忽略隐藏域
         rules:{
@@ -67,6 +75,13 @@
             },
             second: {
                 required:true
+            },
+            proName: {
+                required:true
+            },
+            url: {
+                required:true,
+                url:true
             }
         },
         messages:{
@@ -75,6 +90,13 @@
             },
             second: {
                 required: "请选择二级标题"
+            },
+            proName: {
+                required: "请填写项目名称"
+            },
+            url: {
+                required: "请填写项目链接",
+                url: "请输入以http://或https://或//开头的链接"
             }
         },
         /*onkeyup: function (element){
@@ -94,7 +116,15 @@
     form.validate({
         errorElement: "p",
         submitHandler: function(form){  //通过验证的后的回调
-            alert("成功!");
+            $.ajax({
+                url: "/submitSystem",
+                dataType: "json",
+                type: "POST",
+                data: $(form).serialize(),
+                success: function (data){
+                    alert(data.msg);
+                }
+            });
         }
     });
 })();

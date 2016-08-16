@@ -1,59 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
 body {
   background: #fafafa;
 }
@@ -78,6 +22,7 @@ header .inner .userBox .user {
   font-size: 16px;
   font-weight: bold;
   color: #699;
+  font-style: normal;
 }
 
 #container {
@@ -87,18 +32,7 @@ header .inner .userBox .user {
   background: #fff;
   border-top: 6px solid #333;
 }
-#container #settingForm {
-  width: 960px;
-  margin: 0 auto;
-}
-#container #settingForm .major {
-  position: relative;
-  width: 100%;
-  border-bottom: 2px darkviolet dotted;
-  padding-bottom: 20px;
-  z-index: 2;
-}
-#container #settingForm .major .title {
+#container .title {
   width: 100%;
   height: 36px;
   background: #fff;
@@ -108,10 +42,29 @@ header .inner .userBox .user {
   color: #07aaed;
   font-weight: bold;
 }
+#container #settingForm {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+#container #settingForm .major {
+  position: relative;
+  width: 100%;
+  border-bottom: 2px darkviolet dotted;
+  padding-bottom: 20px;
+  z-index: 2;
+}
+#container #settingForm .minor {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  z-index: 1;
+}
 #container #settingForm .item {
   width: 100%;
   height: 40px;
   margin-top: 20px;
+  font-size: 16px;
 }
 #container #settingForm .item .title {
   display: block;
@@ -126,6 +79,8 @@ header .inner .userBox .user {
 #container #settingForm .item .title em {
   color: #f52f3e;
   padding-right: 10px;
+  font-style: normal;
+  vertical-align: middle;
 }
 #container #settingForm .item .middle {
   width: 360px;
@@ -142,23 +97,54 @@ header .inner .userBox .user {
   background: #fff;
 }
 #container #settingForm .item .middle .select .defTxt {
-  width: 204px;
+  width: 182px;
   height: 38px;
   line-height: 38px;
-  padding-left: 30px;
+  padding: 0 22px 0 30px;
   color: #f33;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #container #settingForm .item .middle .select .check {
   width: 100%;
+  overflow-y: auto;
 }
 #container #settingForm .item .middle .select .check li {
-  width: 204px;
-  padding-left: 30px;
+  width: 182px;
   height: 38px;
   line-height: 38px;
+  padding: 0 22px 0 30px;
   cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-#container #settingForm .item .error {
+#container #settingForm .item .middle .input {
+  width: 220px;
+  height: 38px;
+  padding-left: 14px;
+  background: #2d2d2d;
+  /* browsers that don't support rgba */
+  background: rgba(45, 45, 45, 0.15);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #3d3d3d;
+  /* browsers that don't support rgba */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+#container #settingForm .item p.error {
   height: 40px;
   line-height: 40px;
   float: left;
@@ -172,7 +158,7 @@ header .inner .userBox .user {
   height: 54px;
   border: none;
   position: relative;
-  margin: 20px auto;
+  margin: 40px auto 0;
   z-index: 1;
 }
 #container #settingForm .submitBox a {

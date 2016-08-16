@@ -8,7 +8,8 @@ $.fn.select = function (options){
     var setting = $.extend({
         hidden: true,       //是否填充隐藏域
         instant: false,      //是否立即执行
-        callback: null
+        callback: null,
+        visual: 5           //select显示个数
     }, options);
 
     return this.each(function (){
@@ -17,6 +18,12 @@ $.fn.select = function (options){
             selectBox = $(".check", that),
             targetH = 0,
             singleH = selectBox.children().height();
+
+        selectBox.css({
+            maxHeight: singleH * setting.visual,
+            overflowY: "auto",
+            overflowX: "hidden"
+        });
 
         function selectEvent(obj){
             var $this = obj;
@@ -30,7 +37,7 @@ $.fn.select = function (options){
                 if(setting.hidden){
                     $this.find(".hidden").val($(this).html());
                 }
-                $.isFunction(setting.callback) && setting.callback(that);
+                $.isFunction(setting.callback) && setting.callback($(this),selectBox.children().length);
             });
         }
         

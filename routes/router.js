@@ -7,73 +7,25 @@
 var express = require('express');
 var router = express.Router();
 const fs = require("fs");
+const EventEmitter = require("events").EventEmitter;
+var staticCtrl = require("../controller/staticCtrl"),
+    interfaceCtrl = require("../controller/interfaceCtrl");
 
-//响应登录页
-router.get('/login.html', function(req, res, next) {
-    res.render("login");
-});
-//响应编辑页
-router.get('/edit.html', function(req, res, next) {
-    if(req.session.userInfo){
-        fs.readFile("data/product.json", function (err, data){
-            if(err){
-                res.send("获取数据失败!")
-            }else{
-                res.render("edit", {
-                    username: req.session.userInfo.username,
-                    listJson: JSON.parse(data)
-                });
-            }
-        });
-    }else{
-        req.session.error = "请先登录";
-        res.redirect("/login.html");
-    }
+var E = new EventEmitter();
 
-});
+//登录页
+router.get('/login.html', staticCtrl.login);
+
+//编辑页
+router.get('/edit.html', staticCtrl.edit);
 
 //登录接口信息
-router.post("/login", function (req, res, next){
-    if(req.body.username == "admin" && req.body.password == "admin"){
-        var userInfo = {
-            username: "admin",
-            password: "admin"
-        };
+router.post("/login", interfaceCtrl.login);
 
-        req.session.userInfo = userInfo;
-        res.send({
-            "code": 200,
-            "msg": "登录成功"
-        });
-        
-    }else{
-        res.send({
-            "code": 201,
-            "msg": "用户名或密码错误"
-        });
-    }
-});
+//编辑>二级标题接口
+router.post("/second", interfaceCtrl.second);
 
-//二级目录接口
-router.post("/second", function (req, res, next){
-    var reVal = {};
-    fs.readFile("data/product.json", function (err, data){
-        if(err){
-            reVal = {
-                code: 201,
-                msg: "读取数据失败"
-            };
-        }else{
-            var listJson = JSON.parse(data);
-            for(var i = 0; i<listJson.length; i++){
-                if(listJson[i].name.match(req.body.firstName)){
-                    reVal = listJson[i].child;
-                    break;
-                }
-            }
-        }
-        res.send(reVal);
-    });
-});
+//编辑>详细信息接口
+router.post("/submitSystem", interfaceCtrl.submitSystem);
 
 module.exports = router;
