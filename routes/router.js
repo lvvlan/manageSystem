@@ -28,4 +28,7 @@ router.post("/second", interfaceCtrl.second);
 //编辑>详细信息接口
 router.post("/submitSystem", interfaceCtrl.submitSystem);
 
+//编辑>还原备份接口
+router.post("/reset", interfaceCtrl.reset);
+
 module.exports = router;

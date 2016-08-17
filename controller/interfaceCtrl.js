@@ -13,12 +13,17 @@ E.on("renderEnd", function (req, res, reVal){
     res.send(reVal);
 });
 
+var whiteList = {   //key: name; value: pass
+    admin: "admin",
+    jrudc: "test123"
+};
+
 module.exports = {
     login: function (req, res, next){
-        if(req.body.username == "admin" && req.body.password == "admin"){
+        if(req.body.username in whiteList && req.body.password == whiteList[req.body.username]){
             var userInfo = {
-                username: "admin",
-                password: "admin"
+                username: req.body.username,
+                password: req.body.password
             };
 
             req.session.userInfo = userInfo;
@@ -106,5 +111,34 @@ module.exports = {
                 }
             }
         });
+    },
+    reset: function (req, res, next){
+        var sendJson = {};
+        if(req.session.userInfo.username == "admin"){
+            var srcArr = ["data/backData.json", "data/product.json"],
+                rs = null, ws = null; //[备份数据, 线上数据]
+            if(req.body.resetValue == "true"){    //更新
+                rs = fs.createReadStream(srcArr[1]);
+                ws = fs.createWriteStream(srcArr[0]);
+            }else{  //不更新
+                rs = fs.createReadStream(srcArr[0]);
+                ws = fs.createWriteStream(srcArr[1]);
+            }
+            rs.pipe(ws);
+
+            ws.on("finish", function (){
+                sendJson = {
+                    code: 200,
+                    msg: "还原完成!"
+                };
+                E.emit("renderEnd", req, res, sendJson);
+            });
+        }else{
+            sendJson = {
+                code: 201,
+                msg: "您不能进行此操作!"
+            };
+            E.emit("renderEnd", req, res, sendJson);
+        }
     }
 };

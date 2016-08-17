@@ -8,6 +8,8 @@
     var form = $("#settingForm"),
         currentDef = "",
         $item = $(".item", form),
+        reset = $(".reset", form),
+        resetLock = false,
         formLock = false;
 
     for(var i = 0; i <$item.length; i++){
@@ -116,6 +118,8 @@
     form.validate({
         errorElement: "p",
         submitHandler: function(form){  //通过验证的后的回调
+            if(formLock)return;
+            formLock = true;
             $.ajax({
                 url: "/submitSystem",
                 dataType: "json",
@@ -123,8 +127,65 @@
                 data: $(form).serialize(),
                 success: function (data){
                     alert(data.msg);
+                    formLock = false;
+                },
+                error: function (){
+                    formLock = false;
                 }
             });
         }
+    });
+
+    function resetAjax(mark){
+        $.ajax({
+            url: "/reset",
+            dataType: "json",
+            type: "POST",
+            data: {
+                resetValue: mark
+            },
+            success: function (data){
+                resetLock = false;
+                $(".resetPop").remove();
+                $("#mask").remove();
+                alert(data.msg);
+            },
+            error: function () {
+                resetLock = false;
+                $(".resetPop").remove();
+                $("#mask").remove();
+            }
+        });
+    }
+
+    //还原备份
+    reset.on("click", function (){
+        if(resetLock) return;
+        resetLock = true;
+
+        $("<div id='mask'></div>").appendTo($(document.body));
+        $("#mask").css({
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: $(window).width(),
+            height: $(window).height(),
+            zIndex: 1999,
+            background: "rgba(0, 0, 0, .3)"
+        });
+
+        $("<div class='resetPop'><a class='close' href='javascript:void (0);'>×</a><h3 class='title'>是否更新备份</h3><div class='btnBox'><a class='yesBtn' href='javascript:void (0);' data-reset='true'>更新</a><a class='cancelBtn' href='javascript:void (0);' data-reset='false'>忽略</a></div></div>").appendTo($(document.body));
+
+        $(".yesBtn", ".resetPop").off("click").on("click", function (){
+            resetAjax($(this).attr("data-reset"));
+        });
+        $(".cancelBtn", ".resetPop").off("click").on("click", function (){
+            resetAjax($(this).attr("data-reset"));
+        });
+        $(".close", ".resetPop").off("click").on("click", function (){
+            $(".resetPop").remove();
+            $("#mask").remove();
+            resetLock = false;
+        });
     });
 })();
