@@ -32,5 +32,10 @@ module.exports = {
             req.session.error = "请先登录";
             res.redirect("/login.html");
         }
+    },
+    logout: function (req, res, next){
+        req.session.userInfo = {};
+        req.session.error = "";
+        res.redirect("/login.html");
     }
 };

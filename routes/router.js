@@ -16,6 +16,9 @@ var E = new EventEmitter();
 //登录页
 router.get('/login.html', staticCtrl.login);
 
+//登出
+router.get('/logout.html', staticCtrl.logout);
+
 //编辑页
 router.get('/edit.html', staticCtrl.edit);
 

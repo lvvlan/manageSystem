@@ -24,6 +24,11 @@ header .inner .userBox .user {
   color: #699;
   font-style: normal;
 }
+header .inner .userBox .logout {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #999;
+}
 
 #container {
   width: 1200px;
